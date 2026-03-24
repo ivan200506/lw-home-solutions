@@ -1,1 +1,49 @@
+# ———————— L&W 房产保障计划：全能填空表 (settings.yml) ————————
+# 修改说明：只需修改冒号后面的内容。注意冒号后要有一个空格。
 
+# 【1. 基本信息】
+company_name: "L&W Property Solutions"
+phone: "347-989-2686"
+email: "support@lw-propertysolutions.com"
+logo_path: "/assets/Logo.png"
+
+# 【2. 支付链接 - Stripe】
+# 如果日后更换了 Stripe 链接，直接在这里替换即可
+stripe_links:
+  cn_annual: "https://buy.stripe.com/7sY14mfohaoLdHH6Ef3ks03"
+  cn_monthly: "https://buy.stripe.com/cNi14m8ZT0Ob0UV5Ab3ks02"
+  en_annual: "https://buy.stripe.com/00wbJ06RLbsP4770fR3ks01"
+  en_monthly: "https://buy.stripe.com/cNi3cudg954r9rr0fR3ks00"
+
+# 【3. 核心文案 - 中文版】
+cn_content:
+  hero_title: "建立信任，从守护房产开始"
+  hero_subtitle: "在纽约，只需 $99 就能买下一整月的安心。"
+  philosophy_title: "守护，是为了让生活一如往常"
+  philosophy_body: |
+    在纽约，一次突如其来的漏水或电路故障，打断的往往不只是家务...
+    我们默默守护那些看不见的基石，只为确保您的生活节奏始终从容。
+
+# 【4. 核心文案 - 英文版】
+en_content:
+  hero_title: "Building Trust, One Home at a Time"
+  hero_subtitle: "With L&W, get the whole month of peace for $99."
+  philosophy_title: "Protection, So Life Remains Uninterrupted"
+  philosophy_body: |
+    In New York, a sudden leak or electrical failure disrupts more than just chores...
+    We quietly safeguard the invisible essentials, ensuring your pace of life remains steady.
+
+# 【5. 服务协议条款 - 预置】
+agreement_terms:
+  cn: |
+    1. 本保障计划仅涵盖人工费用。
+    2. 零件与耗材费用由房东承担。
+    3. 订阅制服务，可随时取消下月续费。
+  en: |
+    1. This plan covers labor costs only.
+    2. Parts and materials are at landlord's expense.
+    3. Subscription-based, cancel anytime for next month.
+
+# 【6. 功能开关】
+show_cases: true        # 是否显示“成功案例”板块 (true/false)
+enable_promo: false     # 是否开启限时促销标记
