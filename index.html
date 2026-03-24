@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{{ site.data.settings.company_name }} | 纽约专业房东保障计划</title>
+    <style>
+        :root { --dark: #14523B; --green: #4CAF50; --gold: #FFB300; --bg: #ffffff; --text: #1a1a1a; --light-bg: #f9f9f9; }
+        body { font-family: 'Inter', 'PingFang SC', sans-serif; margin: 0; color: var(--text); background: var(--bg); -webkit-font-smoothing: antialiased; }
+        nav { padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; }
+        .lang-link { text-decoration: none; color: var(--dark); font-weight: 600; font-size: 0.8rem; border: 1.5px solid var(--dark); padding: 5px 12px; border-radius: 4px; }
+        .hero { padding: 40px 8% 60px; display: flex; align-items: center; gap: 40px; min-height: 60vh; }
+        .hero-content { flex: 1.2; text-align: left; }
+        .hero-image { flex: 1; border-radius: 20px; height: 500px; object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        h1 { font-size: 3.5rem; line-height: 1.1; margin: 0 0 25px; color: var(--dark); letter-spacing: -1.5px; }
+        .trust-badges { display: flex; flex-direction: column; gap: 8px; margin-bottom: 25px; align-items: flex-start; }
+        .badge { font-size: 0.85rem; font-weight: 700; color: var(--green); letter-spacing: 1px; text-transform: uppercase; }
+        .comparison-banner { background: #f4f7f5; padding: 25px; border-left: 4px solid var(--gold); font-size: 1.1rem; margin-bottom: 10px; border-radius: 0 8px 8px 0; line-height: 1.6; }
+        .btn-black { background: var(--dark); color: white; padding: 18px 40px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: inline-block; transition: 0.3s; }
+        .brand-philosophy { padding: 80px 10%; background: #fff; text-align: center; }
+        .philosophy-content { max-width: 700px; margin: 0 auto; }
+        footer { padding: 60px 8%; background: #111; color: #888; text-align: center; font-size: 0.85rem; }
+        .footer-contact { margin-top: 15px; font-weight: 600; color: #fff; font-size: 1rem; }
+        @media (max-width: 768px) { 
+            .hero { flex-direction: column-reverse; text-align: center; padding: 20px 6% 40px; gap: 30px; } 
+            h1 { font-size: 2.2rem; } 
+            .hero-image { height: 260px; } 
+            .btn-black { width: 100%; box-sizing: border-box; } 
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <img src="{{ site.data.settings.logo_path }}" alt="Logo" style="height: 35px;">
+    <a href="en-index.html" class="lang-link">English</a>
+</nav>
+<section class="hero">
+    <div class="hero-content">
+        <div class="trust-badges">
+            <span class="badge">LICENSED & INSURED</span>
+            <span class="badge">无长期合同</span>
+        </div>
+        <h1>{{ site.data.settings.cn_content.hero_title }}</h1>
+        <div class="comparison-banner">{{ site.data.settings.cn_content.hero_subtitle }}</div>
+        <a href="details.html" class="btn-black">开启无忧托管 →</a>
+    </div>
+    <img src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg" class="hero-image" alt="NYC Property">
+</section>
+
+<section class="brand-philosophy">
+    <div class="philosophy-content">
+        <h2 style="color: var(--dark); font-size: 1.8rem; margin-bottom: 25px;">{{ site.data.settings.cn_content.philosophy_title }}</h2>
+        <p style="color: #555; line-height: 1.8; font-size: 1.05rem; text-align: justify; margin: 0;">
+            {{ site.data.settings.cn_content.philosophy_body | newline_to_br }}
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 {{ site.data.settings.company_name }} LLC. 版权所有。</p>
+    <div class="footer-contact">{{ site.data.settings.phone }}<br>{{ site.data.settings.email }}</div>
+</footer>
+</body>
+</html>
